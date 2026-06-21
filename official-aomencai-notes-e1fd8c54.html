@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简明指南 · 澳门彩入门与访问提醒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1e2a3a;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+
+        .page-wrap {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* header / hero */
+        .hero {
+            text-align: left;
+            margin-bottom: 2.8rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px solid #dce1e7;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #0b1a2b;
+            margin-bottom: 0.35rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #4a5b6f;
+            font-weight: 400;
+            background: #e6eaef;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+            margin-top: 0.3rem;
+        }
+
+        /* card components */
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 20, 40, 0.04);
+            border: 1px solid #e6eaef;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2rem;
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 20, 40, 0.06);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px dashed #d0d7e0;
+            padding-bottom: 0.6rem;
+        }
+
+        .card-header h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #17344f;
+            letter-spacing: -0.01em;
+        }
+
+        .card-header .badge {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            background: #dde3ec;
+            color: #2c405a;
+            padding: 0.1rem 0.7rem;
+            border-radius: 30px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        .card p {
+            margin-bottom: 1rem;
+            font-size: 0.98rem;
+            color: #2c3a4b;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .inset-quote {
+            background: #f5f8fc;
+            border-left: 4px solid #7b8ca3;
+            padding: 0.9rem 1.4rem;
+            margin: 1.4rem 0;
+            border-radius: 0 12px 12px 0;
+            font-size: 0.93rem;
+            color: #1d2c3f;
+        }
+
+        .inset-quote strong {
+            color: #0a1f33;
+            font-weight: 550;
+        }
+
+        .inset-quote a {
+            color: #1f4a7a;
+            text-decoration: none;
+            border-bottom: 1px dotted #7b8ca3;
+            font-weight: 500;
+        }
+
+        .inset-quote a:hover {
+            border-bottom: 1px solid #1f4a7a;
+        }
+
+        .link-embed {
+            font-weight: 500;
+            color: #1f4a7a;
+            text-decoration: none;
+            border-bottom: 1px solid #b5c4d4;
+            transition: border 0.2s;
+        }
+
+        .link-embed:hover {
+            border-bottom: 1px solid #0b2e4e;
+            color: #0b2e4e;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item .q {
+            font-weight: 550;
+            color: #1a334a;
+            margin-bottom: 0.15rem;
+            display: flex;
+            gap: 0.4rem;
+        }
+
+        .faq-item .q::before {
+            content: "▹";
+            color: #5b7391;
+        }
+
+        .faq-item .a {
+            margin-left: 1.3rem;
+            color: #3b4e64;
+            font-size: 0.94rem;
+        }
+
+        .visit-note {
+            background: #eef3f9;
+            border-radius: 40px;
+            padding: 0.8rem 1.6rem;
+            display: inline-block;
+            color: #1b334d;
+            font-size: 0.92rem;
+            border: 1px solid #d6dfea;
+            margin-top: 0.3rem;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 2.8rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #dce1e7;
+            font-size: 0.85rem;
+            color: #5d7187;
+        }
+
+        .footer-note a {
+            color: #2c4a6b;
+            text-decoration: none;
+            border-bottom: 1px dotted #a3b5ca;
+        }
+
+        .footer-note a:hover {
+            border-bottom: 1px solid #2c4a6b;
+        }
+
+        /* responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 1.3rem 1.2rem;
+                border-radius: 14px;
+            }
+
+            .card-header {
+                flex-wrap: wrap;
+                gap: 0.3rem;
+            }
+
+            .inset-quote {
+                margin-left: -0.2rem;
+                margin-right: -0.2rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .hero .sub {
+                font-size: 0.88rem;
+                padding: 0.15rem 0.8rem;
+            }
+            .card-header h2 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+    <!-- hero -->
+    <div class="hero">
+        <h1>澳门彩 · 简明浏览指南</h1>
+        <div class="sub">信息速览 &amp; 访问提醒</div>
+    </div>
+
+    <!-- 导语 + 首次链接 -->
+    <div class="card">
+        <div class="card-header">
+            <h2>从实用出发</h2>
+            <span class="badge">入门</span>
+        </div>
+        <p>
+            对于初次接触 <a href="https://official-aomencai.com" class="link-embed">澳门彩</a> 
+            的朋友来说，清楚平台属性与基本操作逻辑是第一步。本篇不罗列术语，只提炼最常见的使用场景和值得留意的细节，帮助你快速形成判断。
+        </p>
+        <p>
+            下文将依次介绍页面结构、核心功能分布、以及账号与环境方面的基础建议。所有信息均基于公开界面整理，不涉及非公开数据或诱导性表述。
+        </p>
+    </div>
+
+    <!-- 特点 + 场景 两段正文 -->
+    <div class="card">
+        <div class="card-header">
+            <h2>界面特征与信息分区</h2>
+            <span class="badge">概览</span>
+        </div>
+        <p>
+            当前版本采用左右两栏布局，左侧为菜单导航与账户摘要，右侧承载主要资讯流。顶部设有快捷筛选条，可按类型或更新时间排序。色彩以深蓝与浅灰为主，对比度适中，长时间浏览疲劳感较低。
+        </p>
+        <p>
+            内容更新遵循固定节奏，每期结果与历史记录均以表格形式陈列，并附带简要走势图（折线 / 柱状）。页面底部提供常见问题折叠区，涵盖注册、充值、密码重置等基础操作。
+        </p>
+        <div class="inset-quote">
+            <strong>访问提示：</strong> 首次进入时建议花 3–5 分钟浏览“帮助中心”与“平台公告”，这两处信息能避免大部分操作误解。<a href="https://official-aomencai.com">澳门彩</a> 的公告区域通常位于右下角图标内，点击即可展开。
+        </div>
+    </div>
+
+    <!-- 引用提示 + 访问安全 -->
+    <div class="card">
+        <div class="card-header">
+            <h2>访问习惯与安全边界</h2>
+            <span class="badge">提醒</span>
+        </div>
+        <p>
+            使用任何线上服务都应保持基本的安全意识。建议通过官方域名直接访问，避免使用第三方聚合链接或镜像站。确认地址栏显示为 <code>https://official-aomencai.com</code> 后再进行登录操作。
+        </p>
+        <p>
+            密码应单独设置，不与常用邮箱或社交账号重复。同时留意浏览器扩展权限，不轻易授权“读取所有网站数据”类插件。如果使用公共设备，务必在退出时清除浏览器缓存与表单记录。
+        </p>
+        <div class="inset-quote">
+            <strong>一句话原则：</strong> 域名即身份。每次访问前养成核对地址的习惯，是成本最低的安全策略。
+        </div>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="card">
+        <div class="card-header">
+            <h2>常见疑问速览</h2>
+            <span class="badge">FAQ</span>
+        </div>
+        <div class="faq-item">
+            <div class="q">页面加载缓慢怎么办？</div>
+            <div class="a">先检查本地网络与 DNS 设置，同时确认是否使用了非官方入口。部分运营商可能对境外站点限速，可尝试切换网络环境。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">如何确认信息是最新一期？</div>
+            <div class="a">首页顶部会显示最近更新时间戳（精确到分钟），同时每期数据卡片右上角带有“最新”标记。建议以这两处为准，避免参考第三方截图。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">移动端适配体验如何？</div>
+            <div class="a">页面采用响应式设计，在手机浏览器上会自动调整为单列布局。菜单折叠至左上角图标，表格支持横向滑动。字体大小略大于桌面版，阅读友好。</div>
+        </div>
+    </div>
+
+    <!-- 访问句 + 第二次链接自然嵌入 -->
+    <div class="card" style="padding-bottom: 1.4rem;">
+        <p style="margin-bottom: 0.6rem;">
+            <span class="visit-note">✔ 如需直接浏览，请认准 <a href="https://official-aomencai.com" class="link-embed" style="border-bottom-style: solid;">澳门彩</a> 官方页面，避免使用代理或非标准入口。</span>
+        </p>
+        <p style="margin-top: 0.8rem; font-size: 0.93rem; color: #40566e;">
+            本指南仅作为入门参考，不构成任何操作建议。实际使用中请以页面实时呈现的信息为准。
+        </p>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-note">
+        <span>内容整理 · 2025 · 基于公开信息编写</span><br>
+        <span style="display: inline-block; margin-top: 0.3rem;">访问入口：<a href="https://official-aomencai.com">澳门彩</a></span>
+    </div>
+</div>
+</body>
+</html>
